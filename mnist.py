@@ -7,7 +7,7 @@ output_nodes = 10
 
 n = nn.neural_network([input_nodes, 200, output_nodes], 0.1)
 
-training_data_file = open("/home/neo/disk/ml/book_n/mnist_train.csv", 'r')
+training_data_file = open("mnist_train.csv", 'r')
 training_data_list = training_data_file.readlines()
 training_data_file.close()
 training_num = len(training_data_list)
@@ -31,7 +31,7 @@ for e in range(epochs):
         pass
     pass
 
-test_data_file = open("/home/neo/disk/ml/book_n/mnist_test.csv", 'r')
+test_data_file = open("mnist_test.csv", 'r')
 test_data_list = test_data_file.readlines()
 test_data_file.close()
 
